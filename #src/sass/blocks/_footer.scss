@@ -1,0 +1,101 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 96px;
+	border-top: 1px solid #e5e5e5;
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 34px;
+	}
+	&__copyright {
+		font-weight: 500;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-weight: 500;
+		font-size: 14px;
+		flex-shrink: 1;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 1;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__link {
+		padding: 5px 15px;
+		border-radius: 30px;
+		flex-shrink: 1;
+		transition: all 0.5s;
+	}
+	&:active {
+		background: #e1e1e1;
+		color: #000;
+	}
+	&__link--whatsapp:hover {
+		background: #4ac959;
+		color: #fff;
+	}
+
+	&__link--instagram:hover {
+		background: linear-gradient(45deg, #fcaf45, #fd1d1d, #833ab4, #5851db, #405de6);
+		color: #fff;
+	}
+
+	&__link--youtube:hover {
+		background: #ff0000;
+		color: #fff;
+	}
+
+	&__link--telegram:hover {
+		background: #0088cc;
+		color: #fff;
+	}
+}
+
+@media (max-width: 992px) {
+	.footer {
+		&__link {
+			padding: 5px 10px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.footer {
+		&__container {
+			flex-direction: column-reverse;
+			align-items: center;
+			text-align: center;
+			padding: 20px 30px;
+		}
+		&__copyright {
+			padding-top: 10px;
+		}
+		&__link {
+			padding: 10px 10px;
+		}
+
+		&__list {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+	}
+}

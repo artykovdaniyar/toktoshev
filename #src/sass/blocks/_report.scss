@@ -1,0 +1,160 @@
+.report {
+	&__bill {
+		width: 1142px;
+		margin: 0 auto;
+		border: 1px solid #000000;
+		border-radius: 32px;
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
+	&__bill-header {
+		padding: 0 40px;
+		height: 92px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bill-title {
+		text-transform: uppercase;
+	}
+	&__bill-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		background: #d0103a;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+	&__bill-icon {
+		pointer-events: none;
+		transition: all 0.4s;
+		&.opened {
+			transform: rotate(225deg);
+		}
+	}
+
+	&__bill-content {
+		max-height: 0;
+		transition: all 1s;
+	}
+	&__table {
+		border-collapse: collapse;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__thead {
+		text-transform: uppercase;
+		height: 66px;
+	}
+
+	&__thead-row {
+		text-align: left;
+	}
+
+	&__thead-cell {
+		border: 1px solid #000;
+		line-height: 21px;
+		&:first-child {
+			text-align: center;
+			width: 40px;
+		}
+		&:not(:first-child) {
+			padding-left: 20px;
+		}
+	}
+
+	&__tbody-row {
+		&:nth-child(even) {
+			background: #d0103a;
+			color: #fff;
+		}
+	}
+
+	&__tbody-column {
+		vertical-align: baseline;
+		padding: 20px 16px;
+		border: 1px solid #000;
+		&:first-child {
+			vertical-align: middle;
+			text-align: center;
+			width: 40px;
+		}
+		&:nth-child(2) {
+			width: 276px;
+		}
+		&:nth-child(3) {
+			width: 276px;
+		}
+		&:nth-child(4) {
+			width: 276px;
+		}
+		&:last-child {
+			width: 273px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.report {
+		padding-left: 20px;
+		padding-right: 20px;
+		&__bill {
+			width: 100%;
+		}
+		&__bill-header {
+			padding: 0 20px;
+		}
+		&__bill-button {
+			width: 40px;
+			height: 40px;
+		}
+		&__table {
+			font-weight: 400;
+		}
+		&__tbody-column {
+			padding: 8px 10px;
+		}
+		&__bill-content {
+			overflow-y: hidden;
+			overflow-x: scroll;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.report {
+		&__bill {
+			margin-bottom: 15px;
+		}
+		&__bill-header {
+			padding: 0 20px;
+			min-height: 76px;
+		}
+		&__bill-title {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			text-transform: none;
+		}
+		&__table {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}
+@media (max-width: 481px) {
+	.report {
+		padding-left: 20px;
+		padding-right: 20px;
+		&__bill {
+			padding: 5px 0;
+			border-radius: 0;
+		}
+		&__table {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}

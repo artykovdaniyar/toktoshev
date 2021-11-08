@@ -1,0 +1,89 @@
+.biography {
+	width: 100%;
+	padding: 30px 0 80px;
+	&__education-row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__education-date {
+		flex-shrink: 0;
+		padding-right: 70px;
+		min-width: 118px;
+		font-weight: 800;
+	}
+
+	&__experiance-row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 38px;
+		}
+	}
+
+	&__experiance-date {
+		width: 203px;
+		flex-shrink: 0;
+		margin-right: 117px;
+		font-weight: 800;
+	}
+	&__experiance-date--long {
+		width: 265px;
+		margin-right: 80px;
+	}
+
+	&__awards-row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__awards-date {
+		margin-right: 104px;
+		min-width: 94px;
+		font-weight: 800;
+	}
+}
+@media (max-width: 768px) {
+	.biography {
+		&__education-date {
+			padding-right: 30px;
+		}
+		&__experiance-date {
+			margin-right: 70px;
+		}
+		&__awards-date {
+			margin-right: 50px;
+		}
+	}
+}
+
+@media (max-width: 481px) {
+	.biography {
+		&__experiance-row,
+		&__education-row,
+		&__awards-row {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&__education-date {
+			padding-right: 0;
+			padding-left: 30px;
+		}
+		&__experiance-date {
+			margin-right: 0;
+		}
+		&__awards-date {
+			margin-right: 0;
+		}
+	}
+}
