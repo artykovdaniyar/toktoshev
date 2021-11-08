@@ -8,3 +8,10 @@
 		line-height: 26px;
 	}
 }
+@media (max-width: 481px) {
+	.plans__subtitle {
+		display: block;
+		padding: 30px 0 20px;
+		font-size: 20px;
+	}
+}

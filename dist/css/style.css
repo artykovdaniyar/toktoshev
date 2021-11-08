@@ -27,7 +27,7 @@
 }
 
 .page__paragraph {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 20px;
@@ -152,7 +152,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #333333;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
 }
@@ -658,7 +658,7 @@ address {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid red;
+  border: 5px solid red;
   border-radius: 50%;
   -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
           animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -884,6 +884,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 .biography__education-row:not(:last-child) {
@@ -908,6 +909,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 .biography__experiance-row:not(:last-child) {
@@ -937,6 +939,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 .biography__awards-row:not(:last-child) {
@@ -2344,13 +2347,33 @@ img.mfp-img {
     text-align: center;
     margin-bottom: 10px;
   }
+
+  .footer__link--whatsapp:hover {
+    background: #fff;
+    color: #333;
+  }
+
+  .footer__link--instagram:hover {
+    background: #fff;
+    color: #333;
+  }
+
+  .footer__link--youtube:hover {
+    background: #fff;
+    color: #333;
+  }
+
+  .footer__link--telegram:hover {
+    background: #fff;
+    color: #333;
+  }
 }
 
 @media (max-width: 481px) {
   .page__title {
-    margin-bottom: 30px;
-    font-size: 19px;
-    line-height: 28px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .page__section {
@@ -2368,6 +2391,11 @@ img.mfp-img {
   .page__unordered-list {
     list-style: disc;
     padding-left: 20px;
+  }
+
+  .page__ordered-item,
+  .page__unordered-item {
+    margin-bottom: 2px;
   }
 
   .header {
@@ -2427,8 +2455,8 @@ img.mfp-img {
   }
 
   .promo__title {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 26px;
   }
 
   .promo__info {
@@ -2459,7 +2487,6 @@ img.mfp-img {
 
   .biography__education-date {
     padding-right: 0;
-    padding-left: 30px;
   }
 
   .biography__experiance-date {
@@ -2492,6 +2519,12 @@ img.mfp-img {
   .gallery__img {
     width: 100%;
   }
+
+  .plans__subtitle {
+    display: block;
+    padding: 30px 0 20px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2502,7 +2535,7 @@ img.mfp-img {
 
 @media (max-width: 350px) {
   .media__container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .media__link {
