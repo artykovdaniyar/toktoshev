@@ -39,3 +39,11 @@
 		transform: rotate(360deg);
 	}
 }
+@media (max-width: 481px) {
+	.lds-ring div {
+		width: 34px;
+		height: 34px;
+		border: 3px solid red;
+		border-color: red transparent transparent transparent;
+	}
+}

@@ -126,11 +126,12 @@
 @media (max-width: 768px) {
 	.report {
 		&__bill {
+			padding: 10px 20px;
 			margin-bottom: 15px;
 		}
 		&__bill-header {
-			padding: 0 20px;
-			min-height: 76px;
+			padding: 5px 20px;
+			height: fit-content;
 		}
 		&__bill-title {
 			font-weight: 600;

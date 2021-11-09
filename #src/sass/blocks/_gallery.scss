@@ -9,7 +9,9 @@
 		width: 1172px;
 		margin: 0 auto;
 	}
-
+	&__link {
+		cursor: zoom-in;
+	}
 	&__img {
 		width: 250px;
 		height: 144px;
@@ -17,11 +19,8 @@
 		border-radius: 8px;
 		margin: 16px 0;
 		transition: all 0.3s;
-		border: 3px solid #333;
-		&:hover {
-			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-			transform: scale(1.1);
-		}
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		pointer-events: none;
 	}
 }
 @media (max-width: 1200px) {
@@ -33,6 +32,9 @@
 }
 @media (max-width: 768px) {
 	.gallery {
+		&__link {
+			cursor: pointer;
+		}
 		&__container {
 			padding: 0 20px;
 		}
